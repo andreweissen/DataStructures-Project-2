@@ -1,0 +1,27 @@
+Input: 721 2 3 * 50 + 8 4 21 / - * -
+Mul R0 2 3
+Add R1 R0 50
+Div R2 4 21
+Sub R3 8 R2
+Mul R4 R1 R3
+Sub R5 721 R4
+
+Input: 3 5 9 + - 2 3 * /
+Add R0 5 9
+Sub R1 3 R0
+Mul R2 2 3
+Div R3 R1 R2
+
+Input: 5 1 2 + 4 * + 3 -
+Add R0 1 2
+Mul R1 R0 4
+Add R2 5 R1
+Sub R3 R2 3
+
+Input: 1 312 + 3 5 * / 5 1 - +
+Add R0 1 312
+Mul R1 3 5
+Div R2 R0 R1
+Sub R3 5 1
+Add R4 R2 R3
+
